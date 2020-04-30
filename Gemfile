@@ -14,8 +14,8 @@ end
 
 group :test do
   gem 'webmock'
-  gem 'codeclimate-test-reporter', require: nil
-  gem 'simplecov'
+  gem 'codeclimate-test-reporter', '>= 1.0.7', require: nil
+  gem 'simplecov', '>= 0.15.1'
   gem 'stub_env'
   gem 'rails-controller-testing'
 end
