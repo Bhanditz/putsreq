@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 
 ruby '2.5.0'
 
-gem 'rails', '~> 5.1.0'
-gem 'sass-rails'
+gem 'rails', '~> 5.1.6'
+gem 'sass-rails', '>= 5.0.7'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails'
-gem 'jquery-rails'
+gem 'coffee-rails', '>= 4.2.2'
+gem 'jquery-rails', '>= 4.4.0'
 
 group :production do
   gem 'rails_12factor'
@@ -17,21 +17,21 @@ group :test do
   gem 'codeclimate-test-reporter', require: nil
   gem 'simplecov'
   gem 'stub_env'
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.2'
 end
 
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.4.0'
   gem 'binding_of_caller'
 end
 
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
-  gem 'rspec-rails'
-  gem 'rack-test'
+  gem 'rspec-rails', '>= 3.7.2'
+  gem 'rack-test', '>= 1.0.0'
   gem 'database_cleaner'
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', '>= 2.2.1'
 end
 
 source 'https://rails-assets.org' do
@@ -49,12 +49,12 @@ gem 'httparty'
 gem 'rack-cors', require: 'rack/cors'
 gem 'redis'
 gem 'bootstrap-sass', '~> 3.1.1'
-gem 'dotiw'
-gem 'devise', '~> 4.4.0'
+gem 'dotiw', '>= 4.0.0'
+gem 'devise', '~> 4.4.3'
 gem 'pusher'
 gem 'interactor', '~> 3.0'
 gem 'rollbar'
 gem 'oj'
-gem 'webpacker', '~> 3.0'
-gem 'active_model_serializers'
+gem 'webpacker', '~> 3.2', '>= 3.2.0'
+gem 'active_model_serializers', '>= 0.10.7'
 gem 'puma'
