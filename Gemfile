@@ -13,7 +13,7 @@ group :production do
 end
 
 group :test do
-  gem 'webmock'
+  gem 'webmock', '>= 3.1.1'
   gem 'codeclimate-test-reporter', require: nil
   gem 'simplecov'
   gem 'stub_env'
