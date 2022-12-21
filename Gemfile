@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.5.0'
 
-gem 'rails', '~> 5.1.0'
-gem 'sass-rails'
+gem 'rails', '~> 5.1.6'
+gem 'sass-rails', '>= 6.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails'
 gem 'jquery-rails'
