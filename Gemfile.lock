@@ -98,7 +98,8 @@ GEM
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     hashdiff (0.3.7)
-    httparty (0.15.6)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     httpclient (2.8.3)
     i18n (1.0.0)
@@ -292,7 +293,7 @@ DEPENDENCIES
   devise (~> 4.4.0)
   dotenv-rails
   dotiw
-  httparty
+  httparty (>= 0.21.0)
   interactor (~> 3.0)
   jquery-rails
   kaminari-actionview
@@ -327,4 +328,4 @@ RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   1.16.1
+   1.17.3
