@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.5.0'
 
-gem 'rails', '~> 5.1.0'
-gem 'sass-rails'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.1'
+gem 'sass-rails', '>= 5.0.8'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails'
 gem 'jquery-rails'
@@ -17,7 +17,7 @@ group :test do
   gem 'codeclimate-test-reporter', require: nil
   gem 'simplecov'
   gem 'stub_env'
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.3'
 end
 
 group :development do
@@ -31,7 +31,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rack-test'
   gem 'database_cleaner'
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', '>= 2.7.6'
 end
 
 source 'https://rails-assets.org' do
@@ -42,7 +42,7 @@ source 'https://rails-assets.org' do
 end
 
 gem 'therubyracer'
-gem 'mongoid', '~> 6'
+gem 'mongoid', '~> 7', '>= 7.0.12'
 gem 'kaminari-mongoid'
 gem 'kaminari-actionview'
 gem 'httparty'
@@ -50,11 +50,11 @@ gem 'rack-cors', require: 'rack/cors'
 gem 'redis'
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'dotiw'
-gem 'devise', '~> 4.4.0'
+gem 'devise', '~> 4.7.0'
 gem 'pusher'
 gem 'interactor', '~> 3.0'
 gem 'rollbar'
 gem 'oj'
-gem 'webpacker', '~> 3.0'
-gem 'active_model_serializers'
+gem 'webpacker', '~> 3.2', '>= 3.2.0'
+gem 'active_model_serializers', '>= 0.10.12'
 gem 'puma'
