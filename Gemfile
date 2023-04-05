@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 
 ruby '2.5.0'
 
-gem 'rails', '~> 5.1.0'
-gem 'sass-rails'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.3'
+gem 'sass-rails', '>= 6.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 
 group :production do
   gem 'rails_12factor'
@@ -17,11 +17,11 @@ group :test do
   gem 'codeclimate-test-reporter', require: nil
   gem 'simplecov'
   gem 'stub_env'
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.3'
 end
 
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller'
 end
 
@@ -29,9 +29,9 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'rspec-rails'
-  gem 'rack-test'
+  gem 'rack-test', '>= 2.0.0'
   gem 'database_cleaner'
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', '>= 2.7.6'
 end
 
 source 'https://rails-assets.org' do
@@ -42,19 +42,19 @@ source 'https://rails-assets.org' do
 end
 
 gem 'therubyracer'
-gem 'mongoid', '~> 6'
+gem 'mongoid', '~> 7', '>= 7.0.12'
 gem 'kaminari-mongoid'
 gem 'kaminari-actionview'
-gem 'httparty'
-gem 'rack-cors', require: 'rack/cors'
+gem 'httparty', '>= 0.21.0'
+gem 'rack-cors', '>= 1.0.5', require: 'rack/cors'
 gem 'redis'
-gem 'bootstrap-sass', '~> 3.1.1'
+gem 'bootstrap-sass', '~> 3.4.0'
 gem 'dotiw'
-gem 'devise', '~> 4.4.0'
+gem 'devise', '~> 4.7.1'
 gem 'pusher'
 gem 'interactor', '~> 3.0'
 gem 'rollbar'
 gem 'oj'
-gem 'webpacker', '~> 3.0'
-gem 'active_model_serializers'
-gem 'puma'
+gem 'webpacker', '~> 3.2', '>= 3.2.0'
+gem 'active_model_serializers', '>= 0.10.12'
+gem 'puma', '>= 4.3.12'
