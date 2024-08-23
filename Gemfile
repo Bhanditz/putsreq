@@ -17,7 +17,7 @@ group :test do
   gem 'codeclimate-test-reporter', require: nil
   gem 'simplecov'
   gem 'stub_env'
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.3'
 end
 
 group :development do
@@ -44,7 +44,7 @@ end
 gem 'therubyracer'
 gem 'mongoid', '~> 6'
 gem 'kaminari-mongoid'
-gem 'kaminari-actionview'
+gem 'kaminari-actionview', '>= 1.2.0'
 gem 'httparty'
 gem 'rack-cors', require: 'rack/cors'
 gem 'redis'
