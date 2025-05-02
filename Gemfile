@@ -28,7 +28,7 @@ end
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'rack-test'
   gem 'database_cleaner'
   gem 'dotenv-rails'
