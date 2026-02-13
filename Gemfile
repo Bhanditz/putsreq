@@ -42,8 +42,8 @@ source 'https://rails-assets.org' do
 end
 
 gem 'therubyracer'
-gem 'mongoid', '~> 6'
-gem 'kaminari-mongoid'
+gem 'mongoid', '~> 7', '>= 7.6.1'
+gem 'kaminari-mongoid', '>= 1.0.2'
 gem 'kaminari-actionview'
 gem 'httparty'
 gem 'rack-cors', require: 'rack/cors'
